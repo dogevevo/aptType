@@ -6,7 +6,9 @@
     "strict": true, 
     "esModuleInterop": true, 
     "moduleResolution": "node", 
-    "baseUrl": "./src", 
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "types": ["node", "express"],
     "paths": { 
       "@controllers/*": ["controllers/*"],
       "@services/*": ["services/*"],
