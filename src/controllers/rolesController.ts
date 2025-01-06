@@ -6,7 +6,7 @@ import { InterfaceRolesRepository, InterfaceRolesServices, Roles } from "types/R
 
 
 const rolesRepository: InterfaceRolesRepository = new RolesRepository();
-const rolesService: InterfaceRolesServices = new RolesServices(rolesRepository)
+const rolesService: InterfaceRolesServices = new RolesServices(rolesRepository); 
 
 export const findRoles = async (req : Request, res: Response) => {
 

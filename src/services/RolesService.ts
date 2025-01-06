@@ -1,3 +1,4 @@
+import { Query } from "mongoose";
 import { InterfaceRolesRepository, Roles, InterfaceRolesServices } from "types/RolesTypes";
 
 export class RolesServices implements InterfaceRolesServices{ 
@@ -11,8 +12,8 @@ export class RolesServices implements InterfaceRolesServices{
         return this.rolesRepository.create(Roles)
     }
 
-    async findRoles(): Promise<Roles[]> {
-        return this.rolesRepository.find()
+    async findRoles(query ?: Query): Promise<Roles[]> {
+        return this.rolesRepository.find(query)
     }
 
     async findRolesById(id: string): Promise<Roles | null> {

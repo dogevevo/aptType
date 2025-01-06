@@ -23,7 +23,17 @@ const UserSchema : Schema = new Schema<User> (
             type: String, 
             require: true, 
             trim: true
-        }
+        }, 
+        permissions : { 
+            type : [String], 
+            default : []
+        }, 
+        roles : [
+            { 
+                ref : "Roles", 
+                type : Schema.Types.ObjectId
+            }
+        ]
     }, { 
         timestamps: true, 
         versionKey: false

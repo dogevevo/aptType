@@ -9,6 +9,7 @@ Content-Type: application/json
 
 ###
 GET http://localhost:4000/api/v1/roles http/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MTM4NjcxLCJleHAiOjE3MzYyMjUwNzF9.h8XjklL598k6-xrCkhTAM6v8oY8SO73xAKrxiNKM860
 
 
 ###

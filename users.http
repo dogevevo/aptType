@@ -1,16 +1,20 @@
 POST http://localhost:4000/api/v1/users http/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MDU2OTQwLCJleHAiOjE3MzYxNDMzNDB9.y04sNxhHYoL0bgNoWF8ZHE8HiKT_XNWRm1g_QLbZRrg
 
 
 {
     "name": "antonio2", 
     "username": "antoniojr2",
-    "email": "example2@test.com"
+    "email": "example2@test.com", 
+    "password": "123456"
 }
 
 
 ###
 GET http://localhost:4000/api/v1/users http/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MDU2OTQwLCJleHAiOjE3MzYxNDMzNDB9.y04sNxhHYoL0bgNoWF8ZHE8HiKT_XNWRm1g_QLbZRrg
+
 
 
 ###
@@ -29,4 +33,5 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:4000/api/v1/users/676f7cf39bf6248e4e0073df http/1.1
+DELETE http://localhost:4000/api/v1/users/677b6d084b779607d0a47882 http/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MDU2OTQwLCJleHAiOjE3MzYxNDMzNDB9.y04sNxhHYoL0bgNoWF8ZHE8HiKT_XNWRm1g_QLbZRrg
