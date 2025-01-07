@@ -3,7 +3,8 @@ Content-Type: application/json
 
 
 {
-    "name": "test"
+    "name": "guest",
+    "permissions" : ["posts_read"]
 }
 
 

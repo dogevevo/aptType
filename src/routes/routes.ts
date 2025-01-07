@@ -3,7 +3,7 @@ import { createRoles, deleteRoles, findRoles, findRolesById, updateRoles } from 
 import { createPost, deletePosts, findPosts, findpostsById, updatePosts } from "@controllers/postsController";
 import { createUser, deleteUser, findUser, findUserById, updateUser } from "@controllers/userController";
 import { loginUsers, registerUsers } from "@controllers/auth/authControllers";
-import { verifyToken } from "middleware/auth";
+import { getPermissions, verifyToken } from "middleware/auth";
 import { checkRoles } from "middleware/roles";
 
 const router = Router(); 
@@ -15,7 +15,7 @@ export default () => {
     })
 
     //Auth router
-    router.post("/auth/register", registerUsers);
+    router.post("/auth/register",checkRoles, registerUsers);
     router.post("/auth/login", loginUsers);
 
 
@@ -37,8 +37,8 @@ export default () => {
     //post router
     router.get("/posts", findPosts)
     router.get("/posts/:id", findpostsById)
-    router.post("/posts",verifyToken, createPost)
-    router.put("/posts/:id",verifyToken, updatePosts)
+    router.post("/posts",verifyToken, getPermissions ,createPost)
+    router.put("/posts/:id",verifyToken,getPermissions, updatePosts)
     router.delete("/posts/:id",verifyToken, deletePosts)
 
     return router

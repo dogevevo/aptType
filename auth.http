@@ -3,10 +3,11 @@ Content-Type: application/json
 
 
 {
-    "name": "Roger", 
-    "username": "RogerDoge2",
-    "email": "exampleee@test.com",
-    "password": "123456"
+    "name": "test", 
+    "username": "test",
+    "email": "test@test.com",
+    "password": "123456", 
+    "roles": ["user", "manager"]
 }
 
 
@@ -16,6 +17,6 @@ Content-Type: application/json
 
 
 {
-    "email": "exampleee@test.com",
+    "email": "test@test.com",
     "password": "123456"
 }

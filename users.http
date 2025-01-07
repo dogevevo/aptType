@@ -1,19 +1,20 @@
 POST http://localhost:4000/api/v1/users http/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MDU2OTQwLCJleHAiOjE3MzYxNDMzNDB9.y04sNxhHYoL0bgNoWF8ZHE8HiKT_XNWRm1g_QLbZRrg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MjE3MzYzLCJleHAiOjE3MzYzMDM3NjN9.ipgEwhXPyFUJTwOUfNieCWlvK3eGnKAw5O1z_1tH8Sc
 
 
 {
-    "name": "antonio2", 
-    "username": "antoniojr2",
-    "email": "example2@test.com", 
-    "password": "123456"
+    "name": "user", 
+    "username": "user",
+    "email": "user@test.com", 
+    "password": "123456", 
+    "roles": ["user"]
 }
 
 
 ###
 GET http://localhost:4000/api/v1/users http/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MDU2OTQwLCJleHAiOjE3MzYxNDMzNDB9.y04sNxhHYoL0bgNoWF8ZHE8HiKT_XNWRm1g_QLbZRrg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NmY4MDAyMWJhODk4NjJmMWI2NTFhNyIsImVtYWlsIjoiZXhhbXBsZWVlQHRlc3QuY29tIiwidXNlcm5hbWUiOiJSb2dlckRvZ2UyIiwiaWF0IjoxNzM2MjE3MzYzLCJleHAiOjE3MzYzMDM3NjN9.ipgEwhXPyFUJTwOUfNieCWlvK3eGnKAw5O1z_1tH8Sc
 
 
 

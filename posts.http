@@ -1,5 +1,6 @@
 POST http://localhost:4000/api/v1/posts http/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2M5YjkxNjQ4ZjA3ODZkMGIwMjcyZCIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTczNjIyMDU1MywiZXhwIjoxNzM2MzA2OTUzfQ.BnN6X84FaBqWnNKiq4wOU3VQfq53l9RXa9vg2m--CsU
 
 
 {
@@ -22,11 +23,13 @@ GET http://localhost:4000/api/v1/posts/6779a7d4b60fadbd0dcbc82c http/1.1
 
 
 ###
-PUT  http://localhost:4000/api/v1/posts/6779a7d4b60fadbd0dcbc82c http/1.1
+PUT  http://localhost:4000/api/v1/posts/677ca0c2d200aeeff5684552 http/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2M5YjkxNjQ4ZjA3ODZkMGIwMjcyZCIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTczNjIyMDU1MywiZXhwIjoxNzM2MzA2OTUzfQ.BnN6X84FaBqWnNKiq4wOU3VQfq53l9RXa9vg2m--CsU
+
 
 {
-    "title": "test prueba"
+    "title": "test prueba" 
 }
 
 
